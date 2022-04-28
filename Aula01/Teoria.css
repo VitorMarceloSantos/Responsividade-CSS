@@ -1,0 +1,34 @@
+/*Conceitos Básicos
+
+ - Conjunto de técnicas de CSS e JS para que os sites se adaptem automaticamente à largura de tela independente de qual dispositivo está sendo realizado o acesso.
+ 
+ - Unidade de medida: 
+    - absolutas(não são responsivas, ou sejam, não ajustam a medida em que a tela vai sendo aumentada ou diminuida): pixel(px)
+    - relativa(são responsinvas, pois levam em consideração a view port - tela): porcentagem(%), em(tamanho de fonte, leva em cosideração o elemnto pai, ou seja, se tiver um aninhamento de avô, pai e filho, o elemento filho vai multiplicar pelo elemento avô, depois pelo pai, tamanho padrão: 1em = 16px), rem(tamanho de fonte, leva em consideração sempre o elemento raiz(body), independente da quantidade de aninhamentos sempre vai levar em consideração o tamanho da fonte raiz para o calculo - MAIS UTILIZADO, tamanho padrão 1rem = 16px). ViewHeight(VH) - pega a altura total da tela. ViewWidth(VW) - pega o largura total da tela. 
+ 
+ -MediaQuery: são expressões que condicionam a formatação de CSS. 
+    - Exemplo: @media (min-width: 0px){....}, Exemplo: @media (max-width: 640px){...}
+ 
+ -Selecionar um arquivo
+  - Classe: utiliza o ponto(.)
+  - Id: utiliza o hastag(#)
+  HTML:
+  <div id="teste">
+      <section class="sessao1">
+         <p> </p>
+      </section>
+      <section class="sessao2">
+         <p> </p>
+      </section>
+   </div>
+  - Exemplo: .sessao > p : vai pegar todos os elementos p que estão dentro da classe sessao1 e fazer as alterações. 
+  - Exemplo: #teste p : vai pegar todos os elementos p (de todos os elementos que estão dentro da div com id="teste")e realizar as alterações.
+ 
+  -Calc: utilizado para fazer operações matemáticas, deve sempre obervar o espaçamento. Exemplo: width: calc( 100% / 4 ); nesse caso a largura vai receber o valor de 100% da tela(que pode variar) dividido por 4.
+
+ -Display: block(cada elemento vai ocupar um bloco), inline(os elementos vão ocupar a mesma linha), inline-block(os elementos vai ocupar a mesma até não caber mais, e após isso vai ocorrer a quebra de linha).
+
+ -Formas de ocultar um elemento: display: none (esconde o elemento e remove espaço, ou seja, o espaço que ele utilizava será removido), visibility: hidden (esconde os elementos e não remove os espaçõs, ou seja, o espaço que ele utilizava permanece no pagina).
+
+ -Adicionando video: utiliza a tag iframe(um espaço onde se pode navegar por outros sites, mas alguns sites não liberam a permissão. Ex: youtube - tem a permissão liberada para rodar os videos nos sites.)
+*/

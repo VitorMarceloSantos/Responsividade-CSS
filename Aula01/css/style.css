@@ -1,0 +1,111 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-image: url("https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+}
+
+h1 {
+    color: #f75d5d;
+}
+
+h2 {
+    color: #f75d5d;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+ul {
+    margin-top: 0px;
+}
+
+.desc {
+    font-size: 14px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.period {
+    font-style: italic;
+    color: #888888;
+}
+
+.business, .school {
+    font-weight: bold;
+}
+
+.col-12 {
+    width: 100%;
+}
+#name{
+    font-weight: bold;
+    font-size: 20px;
+}
+[class*="col-"]{ /*Nesse tipo de seletor, o mesmo está selecionando todas as classes em que o seu nome começam com "col-"   -  OBS: O *(asteristico)funciona como um coringa, em que o nome da classe terá apenas um parte, e não o nome completo. */
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+}
+#session .desc p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#session1 #image-container{
+    text-align: center;
+}
+#session1 #image-container img{
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 50%; /*Fazer com que a imagem fique redonda*/
+}
+#session4{
+    background-image: url("https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+}
+#session3{
+    background-image: url("https://images.unsplash.com/photo-1486010586814-abd061e90cf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+    color: white;
+    background-attachment: fixed;/*A imagem vai ficar fixa na rolagem do texto. Efeito Parallax*/
+}
+#session2{
+    background-color: #00ff00;
+}
+@media (min-width: 768px) { /*Quando a largura deverá ser no mínimo de 768px para que as mudanças sejam executadas.*/
+    [class*="col-"]{
+        margin-right: -5px;
+    }
+    .col-md-4 {
+        width: calc( 100% * 4 / 12 - 31px );/*Utiliza a base 12 que é o mesmo que utilizado no bootstrap*/
+    }
+
+    .col-md-8 {
+        width: calc( 100% * 8 / 12 - 31px );/*Utiliza a base 12 que é o mesmo que utilizado no bootstrap*/
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+    #session1 .desc, .desc .desc{
+        margin-bottom: 5px;
+        padding-top: 0px;
+        border-top-style: none;
+    }
+
+    h2, h1 {
+        margin-top: 0px;
+        vertical-align: top;
+    }
+
+    ul {
+        padding-inline-start: 15px;
+    }
+
+    .desc {
+        margin-bottom: 15px;
+        padding-top: 5px;
+        border-top-color: #000000;
+        border-top-width: 2px;
+        border-top-style: solid;
+    }
+}
