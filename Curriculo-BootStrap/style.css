@@ -12,3 +12,20 @@
 .years {
     color: #FFB25B;
 }
+
+.center-separator {
+    display: flex;
+    line-height: 12px;
+    color: #FFB25B;
+    font-size: 12px;
+}
+
+.center-separator::after {
+    content: '';
+    display: inline-block;
+    flex-grow: 1;
+    margin-top: 0.5em;
+    background: #98CA3F;
+    height: 2px;
+    margin-left: 5px;
+}
